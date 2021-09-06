@@ -48,14 +48,16 @@ void List::delete_item(){
     cout<<"\n\n\n\n\n\n\n";
     cout<<"Delete an item \n";
     cout<<"Select an item index number to delete: \n";
-    cin.clear();
-
+    
     if(list.size()){
         for(int i = 0; i<(int)list.size();i++){
             cout<< i <<": " << list[i] <<"\n";
         }
+        int choiceNum;
+        cin >> choiceNum;
+        list.erase(list.begin()+choiceNum);
     }else{
-        cin.clear();
+       
         cout<<"No items to delete\n";     
     }
 
