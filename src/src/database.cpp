@@ -1,12 +1,14 @@
 #include "include/database.h"
 
-void Database::write(){
+void Database::write(vector<string> list){
     ofstream db;
 
     db.open("db/lists.sl");
 
     if(db.is_open()){
-        db << "1\n2\n3\n4\n5\n";
+        for(int i = 0; i<(int)list.size();i++){
+            db << list[i] <<"\n";
+        }
     }else{
         cout<<"Cannot open the file for writing. \n";
     }

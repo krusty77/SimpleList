@@ -4,17 +4,16 @@
 //MAIN
 
 int main (int arg_count, char* args[]){//argument 0 is the name of the program
-    if(arg_count > 1 ){
-        List simpleList;
+    List simpleList;
+    Database data;
 
+    if(arg_count > 1 ){
         simpleList.name = string(args[1]);
         simpleList.print_menu();
+         data.write(simpleList.list);
+         data.read();
     }else{
         cout<< "Username not supplied ... exiting the program" <<endl;
-    }
-
-    Database data;
-    data.write();
-    data.read();
+    }   
     return 0;
 }

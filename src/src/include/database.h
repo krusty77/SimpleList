@@ -10,7 +10,6 @@ class Database{
 
     public:
     //GLOBAL VARIABLE
-    vector<string> list;
     string name;
 
     //Constructor
@@ -24,7 +23,7 @@ class Database{
     }
 
     //METHODS
-    void write();
+    void write(vector<string> list);
     void read();
 
 };
