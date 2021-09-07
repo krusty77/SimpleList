@@ -8,10 +8,12 @@ int main (int arg_count, char* args[]){//argument 0 is the name of the program
     Database data;
 
     if(arg_count > 1 ){
+        
         simpleList.name = string(args[1]);
+        data.read();   
         simpleList.print_menu();
-         data.write(simpleList.list);
-         data.read();
+        //data.write(simpleList.list);   
+        //data.read();      
     }else{
         cout<< "Username not supplied ... exiting the program" <<endl;
     }   
