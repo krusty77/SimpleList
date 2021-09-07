@@ -15,5 +15,5 @@ int main (int arg_count, char* args[]){//argument 0 is the name of the program
     }else{
         cout<< "Username not supplied ... exiting the program" <<endl;
     }   
-    return 0;
+    return 0; 
 }
