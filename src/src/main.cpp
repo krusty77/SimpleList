@@ -13,8 +13,6 @@ int main (int arg_count, char* args[]){//argument 0 is the name of the program
         simpleList.mainList = data.read();           
         simpleList.find_userList();
         simpleList.print_menu();
-        //data.write(simpleList.list);   
-        //data.read();      
     }else{
         cout<< "Username not supplied ... exiting the program" <<endl;
     }   
