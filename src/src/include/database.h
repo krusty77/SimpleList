@@ -11,7 +11,7 @@ class Database{
     public:
     //GLOBAL VARIABLE
     string name;
-    vector<vector<string>> MainList;
+    vector<vector<string>> mainList;
 
     //Constructor
     Database(){
@@ -24,7 +24,7 @@ class Database{
     }
 
     //METHODS
-    void write(vector<string> MainList);
+    void write(vector<vector<string>> MainList);
     vector<vector<string>> read();
 
 };

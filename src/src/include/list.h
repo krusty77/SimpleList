@@ -8,6 +8,7 @@ class List{
     public:
     //GLOBAL VARIABLE
     vector<string> list;
+    vector<vector<string>> mainList;
     string name;
 
     //Constructor
@@ -25,5 +26,6 @@ class List{
     void print_list();
     void add_item();
     void delete_item();
+    void find_userList();
 
 };
